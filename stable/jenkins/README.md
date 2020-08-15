@@ -4,7 +4,7 @@ This chart was moved to https://github.com/jenkinsci/helm-charts
 
 # Jenkins Helm Chart
 
-Jenkins master and agent cluster utilizing the Jenkins Kubernetes plugin.
+Jenkins master and agent cluster utilizing the Jenkins Kubernetes plugin
 
 * https://plugins.jenkins.io/kubernetes
 
