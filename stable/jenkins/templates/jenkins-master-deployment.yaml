@@ -190,7 +190,11 @@ spec:
             - name: JENKINS_SLAVE_AGENT_PORT
               value: "{{ .Values.master.slaveListenerPort }}"
             - name: DOCKER_REGISTRY_URL
-              value: "{{ .Values.master.docker.registry.url }}"  
+              value: "{{ .Values.master.docker.registry.url }}"
+            - name: DOCKER_REGISTRY_USERNAME
+              value: "{{ .Values.master.docker.registry.username }}"
+            - name: DOCKER_REGISTRY_PASSWORD
+              value: "{{ .Values.master.docker.registry.password }}"  
             - name: K8S_NODE_NAME
               valueFrom:
                 fieldRef:
