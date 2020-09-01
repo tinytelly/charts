@@ -189,6 +189,8 @@ spec:
               value: "{{ if .Values.master.jenkinsUriPrefix }}--prefix={{ .Values.master.jenkinsUriPrefix }} {{ end }}{{ default "" .Values.master.jenkinsOpts}}"
             - name: JENKINS_SLAVE_AGENT_PORT
               value: "{{ .Values.master.slaveListenerPort }}"
+            - name: DOCKER_REGISTRY_URL
+              value: "{{ .Values.master.docker.registry.url }}"  
             - name: K8S_NODE_NAME
               valueFrom:
                 fieldRef:
